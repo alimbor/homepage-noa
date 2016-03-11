@@ -1,105 +1,169 @@
+/*基本格式开始*********************/
+*{
+	padding: 0;
+	margin:0;
+}
+/*基本格式结束*********************/
+
+/*公共格式 开始********************/
 body{
-	font-family: Georgia;
-	font-size:small;
+	font-family: "幼圆";
+	font-size:18px;
 	background-image: url(img/bian.png);
 	background-repeat:repeat-y;
-    background-position:-12% -12%;
+	background-size:12%;
+    background-position:-7% -7%;
+    background-color: pink;
 }
+/*=========================下划线，不要用内联css*/
+span.line_through{
+	text-decoration: line-through;
+}
+/*==================清除元素后面元素的左右浮动*/
+.sidebar:after ,.skill:after {
+	content: "";
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+/*==============================图片垂直居中*/
+span.hook{
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	font-size: 0;
+	width: 0;
+	height: 100%;
+	line-height:0;
+}
+.img_hook{
+	vertical-align:middle;
+}
+/*公共格式 结束********************/
 
-#tou{
-	margin:50px 2000px 0px 450px;
+/*头部开始******************/
+.sidebar ul{
+	list-style: none;
+	margin-right: 10px;
+	margin-top: 5px;
+	float: right;
 }
-#noa{
-	margin:0px 2000px 10px 435px;
-}
-
-nav{
-    background-color:black;
-    margin:10px 570px 0px 820px;
-    font-size: 1.4em;
-    font-family: "幼圆";
-    font-weight: bold;
-}
-nav ul{
-    margin:0px;
-    list-style-type:none;
-    padding:5px 0px 5px 0px
-}
-nav ul li{
-    display:inline;
-    padding:7px 20px 7px 45px;
-}
-nav ul li a:link,ul li a:visited {
-    color:white;
-    border-bottom:none;
-    font-weight:bold;
-}
-nav ul li.selected{
-    background-color:#fddf67;
-}
-#ze{
-	font-size:6em;
-	font-family: "Impact";
-	margin:100px 500px 10px 900px;
-}
-#color{
-	margin:50px 1000px 5px 250px;
+.sidebar ul li{
+	display: inline-block;
+	list-style: none;
+	float: left;
 	text-align: center;
-	font-size: 1.5em;
-	font-family: "幼圆";
-	font-weight: bold;
+	border-right: 1px solid white;
 }
-#zuo{
-	margin:80px 1000px 5px 480px;
+/*=========清除最后的右border*/
+.sidebar ul li.last{
+	border-right: 0 none;
 }
-#you{
-    margin:50px 800px 5px 800px;
+.sidebar ul li a{
+	display: inline-block;
+	background: black;
+	color: white;
+	text-decoration: none;
+	width: 60px;
+	margin: 0;
+	padding: 0;
 }
-#code{
-	margin:50px 110px 0px 0px;
-    text-align: center;
-	font-size: 1.5em;
-	font-family: "幼圆";
-	font-weight: bold;
-}
-#like{
-	margin:80px 500px 5px 900px;
-}
-#blog{
-	font-size:6.4em;
-	font-family: "Impact";
-	margin:80px 1000px 10px 430px;
-}
-#no1 h2{
-	margin:5px 1000px 3px 400px;
-	font-family: "幼圆";
-	font-weight: bold;
-}
-#no1 time{
-	margin:5px 1000px 0px 400px;
-}
-#no1 p{
-	font-family: "幼圆";
-	font-size: 0.8em;
-	margin:20px 600px 10px 400px;
-}
-#noa2{
-	margin:50px 2000px 0px 480px;
-}
-#wen{
-	font-family: "幼圆";
-	font-size: 0.7em;
-	margin:0px 700px 0px 480px;
-}
-footer{
-	font-size: 0.5em;
+#head h1{
 	text-align: center;
-	margin-top: 140px;
-	margin-right: 100px;
+	/*text-align: left;*/
+	/*width: 61.8%;*/
+	/*margin:0 auto;*/
 }
+/*头部结束******************/
 
+/*main start************************/
+#main{
+	width: 61.8%;
+	margin:20px auto;
+	background: #dedede;
+}
+#main h2 {
+	text-align: right;
+	font-size: 50px;
+	font-family: "Impact";
+	width: 61.8%;
+	margin:0 auto;
+	border-bottom: 3px solid black;
+	padding:10px 5px 20px 0;
+}
+#main .content{
+	width: 61.8%;
+	margin: 0 auto 0px;
+	padding: 100px 0 100px;
+}
+#main .skill{
+	text-align: center;
+	padding-top: 30px;
+}
+/*=================2个浮动元素才可以并排，记得清除之后元素的浮动*/
+#main .print{
+	float: left;
+	width: 45%;
+}
+#main .font_end{
+	float: right;
+	width: 45%;
+}
+#main .print h3 ,#main .font_end h3{
+	height: 70px;
+}
+#main .like{
+	width: 61.8%;
+	margin: 0 auto;
+}
+#main .like h3{
+	/*float: right;*/
+	text-align: center;
+}
+#main .like img{
+	margin: 0px  5%;
+}
+#main .blog{
+	padding-top:30px;
+}
+#main .blog h3{
+	font-size: 4.3em;
+	font-family: "Impact";
+	border-bottom: 2px solid black;
+	padding-bottom: 30px;
+}
+#main .blog h4{
+	font-size: 30px;
+	font-weight: normal;
+	padding: 20px 0 20px 0px;
+}
+#main .blog time{
+	display: inline-block;
+	padding:0 0 10px 0px;
+}
+#main .blog p{
+	margin-bottom: 1em;
+	text-indent: 2em;
+}
+#main .addition{
+	border-top: 2px solid black;
+}
+/*==================所谓的文字环绕就是一个floa*/
+#main .addition .img_float{
+	float: left;
+	margin-right: 30px;
+}
+/*main end************************/
 
-
+/*foot start***************************/
+#foot{
+	width: 61.8%;
+	margin: 0 auto;
+	text-align: center;
+}
+/*foot end***************************/
 
 
 
