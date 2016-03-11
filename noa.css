@@ -1,0 +1,126 @@
+body{
+	font-family: Georgia;
+	font-size:small;
+	background-image: url(img/bian.png);
+	background-repeat:repeat-y;
+	background-size:12%;
+    background-position:-7% -7%;
+}
+
+#tou{
+	margin-left: 300px;
+}
+#noa{
+	margin-left:290px;
+}
+
+nav{
+    background-color:black;
+    margin-left: 620px;
+    font-size: 1em;
+    font-family: "幼圆";
+    font-weight: bold;
+}
+nav ul{
+    list-style-type:none;
+    padding:3px 0px 3px 0px;
+}
+nav ul li{
+    display:inline;
+    padding:7px 20px 7px 45px;
+}
+nav ul li a:link,ul li a:visited {
+    color:white;
+    border-bottom:none;
+    font-weight:bold;
+}
+nav ul li.selected{
+    background-color:#fddf67;
+}
+#ze{
+	font-size:4.3em;
+	font-family: "Impact";
+	margin-left:720px;
+	margin-bottom: 0px;
+}
+#color{
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 1.4em;
+	font-family: "幼圆";
+	font-weight: bold;
+	position:absolute;
+    left:368px;
+    top:470px;
+}
+#zuo{
+	position:absolute;
+    left:430px;
+    top:395px;
+}
+
+#you{
+	position:absolute;
+    left:780px;
+    top:416px;
+}
+#code{
+	font-size: 1.2em;
+	text-align: center;
+    line-height: 1.4em;
+	font-family: "幼圆";
+	font-weight: bold;
+	position:absolute;
+    left:700px;
+    top:470px;
+}
+#like{
+	margin-left:730px;
+	margin-top: 300px;
+}
+#blog{
+	font-size:4.3em;
+	font-family: "Impact";
+	margin-bottom: 5px;
+	margin-left:370px;
+	margin-top: 0px;
+}
+#no1 h2{
+	font-size: 1em;
+	margin-left:370px;
+	font-family: "幼圆";
+	font-weight: bold;
+}
+#no1 time{
+	margin-left:370px;
+    font-size: 0.7em;
+}
+#no1 p{
+	font-family: "幼圆";
+	font-size: 0.5em;
+	margin-left:340px;
+}
+#noa2{
+	margin-left:330px;
+	margin-top: 50px;
+}
+#wen{
+	position:relative;
+    left:500px;
+    top:125px;
+	font-family: "幼圆";
+	font-size: 0.5em;
+}
+footer{
+	font-size: 0.3em;
+	text-align: center;
+	margin-top: 140px;
+	margin-right: 100px;
+}
+
+
+
+
+
+
+
